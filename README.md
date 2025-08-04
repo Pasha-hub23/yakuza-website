@@ -35,3 +35,63 @@
     </section>
 </body>
 </html>
+
+
+# Basic CSS styling for the page
+style_css = """
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #0d0d0d;
+}
+
+.hero {
+    position: relative;
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff0000;
+}
+
+p span {
+    color: #aaa;
+    font-style: italic;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #ff0000;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
